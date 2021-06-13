@@ -96,9 +96,6 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 
 
-" FZF Configuration
-let g:fzf_layout = {'window': {'width': 0.6, 'height': 0.4 }}
-
 " Colorscheme Configuration
 set background=dark
 colorscheme OceanicNext
