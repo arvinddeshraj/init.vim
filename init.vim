@@ -27,6 +27,7 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rhysd/git-messenger.vim'
+Plug 'rust-lang/rust.vim'
 
 " In-built neovim lsp configuration
 Plug 'neovim/nvim-lspconfig'
