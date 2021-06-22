@@ -18,6 +18,9 @@ set splitbelow
 "Search Highilghting 
 set nohlsearch
 
+" Resize windows and move tabs and such with the mouse
+set mouse=a
+
 " Indentation 
 set autoindent
 set softtabstop=4
