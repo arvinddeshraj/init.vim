@@ -47,6 +47,7 @@ Plug 'mkitt/tabline.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tjdevries/cyclist.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -57,4 +58,4 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 
 " Colorscheme Configuration
-colorscheme OceanicNext
+colorscheme gruvbox
