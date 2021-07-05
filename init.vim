@@ -60,7 +60,14 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 
 " Colorscheme Configuration
-colorscheme gruvbox
+let g:tokyonight_style = "night"
+colorscheme tokyonight
 
 " Lualine
-:lua require('lualine').setup()
+lua << EOF
+require('lualine').setup{
+    options = {
+        theme='tokyonight'
+        }
+}
+EOF
