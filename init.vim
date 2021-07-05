@@ -48,6 +48,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tjdevries/cyclist.vim'
 Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim'
+Plug 'hoob3rt/lualine.nvim'
 
 call plug#end()
 
@@ -59,3 +61,6 @@ nnoremap <Leader>k :wincmd k<CR>
 
 " Colorscheme Configuration
 colorscheme gruvbox
+
+" Lualine
+:lua require('lualine').setup()
