@@ -9,7 +9,7 @@ set ruler
 " Backspace works now
 set backspace=indent,eol,start
 " cursorline highlights the current line. Disabling because it slows down (n)vim 
-set nocursorline 
+set cursorline
 
 " Default directions for splitting
 set splitright
