@@ -33,6 +33,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'neovim/nvim-lspconfig'
 " auto completion
 Plug 'hrsh7th/nvim-compe'
+Plug 'glepnir/lspsaga.nvim'
 
 
 " Telescope plugins
