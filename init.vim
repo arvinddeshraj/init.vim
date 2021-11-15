@@ -61,7 +61,7 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 
 " Colorscheme Configuration
-let g:tokyonight_style = "night"
+let g:tokyonight_style = "storm"
 colorscheme tokyonight
 
 " Lualine
