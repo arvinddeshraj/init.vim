@@ -11,4 +11,4 @@ setlocal smarttab
 setlocal colorcolumn=120
 
 " Black format on save
-autocmd BufWritePre *.py execute ':Black'
+autocmd BufWritePre *.py silent! execute ':Black'
