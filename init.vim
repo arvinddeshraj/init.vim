@@ -14,6 +14,10 @@ let g:netrw_browse_split = 0
 let g:netrw_winsize = 25
 
 let mapleader = " "
+let g:python3_host_prog = "/home/arvind/envs/neovim/bin/python3"
+
+" coq_nvim settings
+let g:coq_settings = { 'auto_start': 'shut-up' }
 
 call plug#begin("~/.config/nvim/plugged")
 
@@ -32,7 +36,7 @@ Plug 'rust-lang/rust.vim'
 " In-built neovim lsp configuration
 Plug 'neovim/nvim-lspconfig'
 " auto completion
-Plug 'hrsh7th/nvim-compe'
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'glepnir/lspsaga.nvim'
 
 
