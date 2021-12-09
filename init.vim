@@ -18,6 +18,8 @@ let g:python3_host_prog = "/home/arvind/envs/neovim/bin/python3"
 
 " coq_nvim settings
 let g:coq_settings = { 'auto_start': 'shut-up' }
+" make rooter manual
+let g:rooter_manual_only = 1
 
 call plug#begin("~/.config/nvim/plugged")
 
