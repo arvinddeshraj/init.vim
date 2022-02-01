@@ -57,6 +57,7 @@ Plug 'tjdevries/cyclist.vim'
 Plug 'morhetz/gruvbox'
 Plug 'folke/tokyonight.nvim'
 Plug 'hoob3rt/lualine.nvim'
+Plug 'rebelot/kanagawa.nvim'
 
 call plug#end()
 
@@ -67,14 +68,9 @@ nnoremap <Leader>j :wincmd j<CR>
 nnoremap <Leader>k :wincmd k<CR>
 
 " Colorscheme Configuration
-let g:tokyonight_style = "storm"
-colorscheme tokyonight
+colorscheme kanagawa
 
 " Lualine
 lua << EOF
-require('lualine').setup{
-    options = {
-        theme='tokyonight'
-        }
-}
+require('lualine').setup{}
 EOF
