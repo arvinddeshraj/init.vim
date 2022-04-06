@@ -34,6 +34,8 @@ Plug 'mhinz/vim-startify'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rhysd/git-messenger.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'ziglang/zig.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " In-built neovim lsp configuration
 Plug 'neovim/nvim-lspconfig'
