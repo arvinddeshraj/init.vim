@@ -36,7 +36,7 @@ end
 
 -- Rust Analyzer specific setup
 require('lspconfig').rust_analyzer.setup{
-    cmd = {"rust-analyzer-linux"},
+    cmd = {"rust-analyzer"},
     on_attach=on_attach
 }
 
