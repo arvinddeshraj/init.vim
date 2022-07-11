@@ -21,7 +21,7 @@ let g:coq_settings = { 'auto_start': 'shut-up' }
 " make rooter manual
 let g:rooter_manual_only = 1
 
-call plug#begin("~/.config/nvim/plugged")
+call plug#begin(stdpath('data') . '/plugged')
 
 " Misc
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all' }
