@@ -12,7 +12,7 @@ vim.opt.hidden = true -- buffers stay around
 vim.opt.equalalways = false -- windows stay the same
 
 -- Text completion
-vim.opt.completeopt = {"menu","menuone","noselect"}
+vim.opt.completeopt = {"menu","menuone"}
 
 -- Default splits
 vim.opt.splitright = true
