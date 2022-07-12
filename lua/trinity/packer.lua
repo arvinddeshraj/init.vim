@@ -3,10 +3,12 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     use 'airblade/vim-gitgutter'
-
     use 'tpope/vim-surround'
+
+    -- Language specific plugins
     use 'rust-lang/rust.vim'
     use 'ziglang/zig.vim'
+    use 'psf/black'
 
     -- configuration for nvim LSP
     use 'neovim/nvim-lspconfig'
@@ -17,7 +19,7 @@ return require('packer').startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'onsails/lspkind.nvim'
 
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use {'nvim-telescope/telescope-ui-select.nvim' }
 
     -- Telescope
