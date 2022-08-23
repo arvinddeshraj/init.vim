@@ -9,3 +9,7 @@ vim.keymap.set("i", "ii", "<Esc>", { noremap=true, silent=true })
 
 -- Black format
 vim.keymap.set("n", "<F9>", ":Black<CR>", { noremap=true, silent=true })
+
+-- Tab Cycling
+vim.keymap.set("n", "<Leader>tn", ":tabnext<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<Leader>tp", ":tabprev<CR>", {noremap=true, silent=true})
