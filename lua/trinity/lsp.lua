@@ -33,11 +33,15 @@ cmp.setup({
             return vim_item
           end
         })
-      }
-  })
+    },
+    experimental = {
+        native_menu = false,
+        ghost_text = true,
+    },
+})
 
-  -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-  cmp.setup.cmdline('/', {
+-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline('/', {
     sources = {
       { name = 'buffer' },
     }
