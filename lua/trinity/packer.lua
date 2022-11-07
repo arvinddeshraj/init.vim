@@ -3,7 +3,15 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     use 'airblade/vim-gitgutter'
-    use 'tpope/vim-surround'
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
 
     -- Language specific plugins
     use 'rust-lang/rust.vim'
