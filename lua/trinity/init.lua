@@ -61,6 +61,17 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     pattern = '*',
 })
 
+-- No linenumbers in terminal buffer
+local term_group = vim.api.nvim_create_augroup('TermOpen', {clear = true})
+vim.api.nvim_create_autocmd('TermOpen', {
+    callback = function ()
+        vim.opt_local.number = false
+        vim.opt_local.relativenumber = false
+    end,
+    group = term_group,
+    pattern = '*',
+})
+
 -- Plugins
 require("trinity.packer")
 require("trinity.maps")
