@@ -34,6 +34,7 @@ vim.opt.list = true
 vim.opt.listchars = {
   eol = '⤶',
   trail = '.',
+  tab = '➤ '
 }
 
 vim.g.mapleader = " " -- space is the leader
