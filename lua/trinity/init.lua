@@ -73,6 +73,11 @@ vim.api.nvim_create_autocmd('TermOpen', {
     pattern = '*',
 })
 
+P = function(v)
+    print(vim.inspect(v))
+    return v
+end
+
 -- Plugins
 require("trinity.packer")
 require("trinity.maps")
