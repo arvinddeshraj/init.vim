@@ -26,6 +26,7 @@ return require('packer').startup(function()
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
     use 'onsails/lspkind.nvim'
+    use {'williamboman/mason.nvim', run = ":MasonUpdate"}
 
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use {'nvim-telescope/telescope-ui-select.nvim' }

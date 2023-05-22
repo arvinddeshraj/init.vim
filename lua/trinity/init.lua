@@ -84,6 +84,8 @@ require("trinity.lsp")
 require("trinity.telescope")
 require("trinity.treesitter")
 
+require("mason").setup{}
+
 vim.cmd('colorscheme kanagawa')
 
 require("lualine").setup {}
