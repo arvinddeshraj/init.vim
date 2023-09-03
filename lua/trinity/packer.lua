@@ -63,19 +63,23 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'hoob3rt/lualine.nvim'
     use 'rebelot/kanagawa.nvim'
-    use({
-        "glepnir/lspsaga.nvim",
-        opt = true,
-        branch = "main",
-        event = "LspAttach",
-        config = function()
-            require("lspsaga").setup({})
-        end,
-        requires = {
-            {"nvim-tree/nvim-web-devicons"},
-            {"nvim-treesitter/nvim-treesitter"}
-        }
-    })
+    -- use({
+    --     "glepnir/lspsaga.nvim",
+    --     opt = true,
+    --     branch = "main",
+    --     event = "LspAttach",
+    --     config = function()
+    --         require("lspsaga").setup({
+    --             lightbulb = {
+    --                 enable = true,
+    --             }
+    --     })
+    --     end,
+    --     requires = {
+    --         {"nvim-tree/nvim-web-devicons"},
+    --         {"nvim-treesitter/nvim-treesitter"}
+    --     }
+    -- })
     -- use({
     --   "folke/noice.nvim",
     --   event = "VimEnter",
