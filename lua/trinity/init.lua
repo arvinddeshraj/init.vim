@@ -86,6 +86,11 @@ require("trinity.treesitter")
 
 require("mason").setup{}
 
+require("kanagawa").setup{
+    background = {
+    dark = "dragon"
+    }
+}
 vim.cmd('colorscheme kanagawa')
 
 require("lualine").setup {}
