@@ -95,3 +95,5 @@ require("kanagawa").setup{
 vim.cmd('colorscheme kanagawa')
 
 require("lualine").setup {}
+
+require("ibl").setup{}

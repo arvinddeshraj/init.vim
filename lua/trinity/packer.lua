@@ -92,6 +92,7 @@ return require('packer').startup(function(use)
         "rcarriga/nvim-notify",
         }
     })
+    use 'lukas-reineke/indent-blankline.nvim'
 
     if packer_bootstrap then
         require('packer').sync()
