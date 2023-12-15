@@ -143,3 +143,9 @@ require('lspconfig')['lua_ls'].setup{
         },
     },
 }
+require('lspconfig')['ruff_lsp'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities=capabilities,
+}
+
