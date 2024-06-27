@@ -51,6 +51,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.inccommand = "split"
 
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', {clear = true})
