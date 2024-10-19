@@ -1,0 +1,13 @@
+-- Window Movement
+vim.keymap.set("n", "<Leader>h", ":wincmd h<CR>", { noremap=true, silent=true })
+vim.keymap.set("n", "<Leader>j", ":wincmd j<CR>", { noremap=true, silent=true })
+vim.keymap.set("n", "<Leader>k", ":wincmd k<CR>", { noremap=true, silent=true })
+vim.keymap.set("n", "<Leader>l", ":wincmd l<CR>", { noremap=true, silent=true })
+
+-- no reaching Esc
+vim.keymap.set("i", "ii", "<Esc>", { noremap=true, silent=true })
+
+-- Tab Cycling
+vim.keymap.set("n", "<Leader>tn", ":tabnext<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<Leader>tp", ":tabprev<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<Leader>tt", ":tabnew<CR>", {noremap=true, silent=true})
