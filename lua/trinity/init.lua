@@ -38,6 +38,7 @@ vim.opt.listchars = {
 }
 
 vim.g.mapleader = " " -- space is the leader
+vim.g.maplocalleader = " "
 
 -- Indentation
 vim.opt.expandtab = true
