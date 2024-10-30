@@ -1,6 +1,4 @@
 local lspkind = require "lspkind"
-lspkind.init {}
-
 local cmp = require "cmp"
 
 cmp.setup {
@@ -19,6 +17,14 @@ cmp.setup {
             },
             { "i", "c" }
         ),
+    },
+    formatting = {
+        format = lspkind.cmp_format({
+            mode = 'text_symbol',
+            before = function(entry, vim_item)
+                return vim_item
+            end
+        })
     }
 }
 
