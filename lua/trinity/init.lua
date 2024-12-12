@@ -37,6 +37,7 @@ vim.opt.listchars = {
   trail = '.',
   tab = '➤ '
 }
+vim.opt.formatoptions:remove "o"
 
 vim.g.mapleader = " " -- space is the leader
 vim.g.maplocalleader = " "
