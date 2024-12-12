@@ -19,5 +19,12 @@ return {
         --   If not available, we use `mini` as the fallback
         -- "rcarriga/nvim-notify",
         }
+    },
+    {
+        'echasnovski/mini.nvim',
+        config = function()
+            local statusline = require "mini.statusline"
+            statusline.setup { use_icons = true }
+        end
     }
 }
