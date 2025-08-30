@@ -34,7 +34,10 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
 end
 
-lspconfig.lua_ls.setup { on_attach=on_attach }
-lspconfig.pyright.setup { on_attach=on_attach }
-lspconfig.ruff.setup { on_attach=on_attach }
-lspconfig.rust_analyzer.setup { on_attach=on_attach}
+local capabilities = require("blink.cmp").get_lsp_capabilities()
+
+
+lspconfig.lua_ls.setup { capabilities=capabilities }
+lspconfig.pyright.setup { capabilities=capabilities }
+lspconfig.ruff.setup { capabilities=capabilities }
+lspconfig.rust_analyzer.setup { capabilities=capabilities }
