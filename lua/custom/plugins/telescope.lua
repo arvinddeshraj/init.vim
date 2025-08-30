@@ -11,6 +11,9 @@ return {
             pickers = {
                 find_files = {
                     theme = "ivy"
+                },
+                git_files = {
+                    theme = "ivy"
                 }
             }
         }
