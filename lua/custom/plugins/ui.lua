@@ -30,5 +30,12 @@ return {
         config = function()
             vim.cmd("colorscheme rose-pine")
         end
+    },
+    {
+        "folke/snacks.nvim",
+        lazy = false,
+        opts = {
+            indent = {enabled = true}
+        }
     }
 }
