@@ -1,1 +1,1 @@
-require('trinity')
+require("config.lazy")
