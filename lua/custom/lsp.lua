@@ -1,4 +1,3 @@
-local lspconfig = require "lspconfig"
 local opts = { noremap=true, silent=true }
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
@@ -34,10 +33,20 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
 end
 
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local client_id = args.data and args.data.client_id or nil
+    local client = client_id and vim.lsp.get_client_by_id(client_id) or nil
+    if client then
+      on_attach(client, args.buf)
+    end
+  end,
+})
+
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
+vim.lsp.config("*",{
+    capabilities = capabilities
+})
 
-lspconfig.lua_ls.setup { capabilities=capabilities }
-lspconfig.pyright.setup { capabilities=capabilities }
-lspconfig.ruff.setup { capabilities=capabilities }
-lspconfig.rust_analyzer.setup { capabilities=capabilities }
+vim.lsp.enable({'lua_ls', 'pyright', 'ruff', 'rust_analyzer', 'clangd'})
