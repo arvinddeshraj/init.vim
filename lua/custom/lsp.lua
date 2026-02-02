@@ -49,4 +49,33 @@ vim.lsp.config("*",{
     capabilities = capabilities
 })
 
-vim.lsp.enable({'lua_ls', 'pyright', 'ruff', 'rust_analyzer', 'clangd'})
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true
+})
+
+vim.lsp.config("dartls", {
+  cmd = { "dart", "language-server", "--protocol=lsp" },
+  filetypes = { "dart" },
+  -- root_dir = function(fname)
+  --   -- Prefer Flutter/Dart project roots
+  --   return vim.fs.root(fname, { "pubspec.yaml", ".git" })
+  -- end,
+  root_markers = {"pubspec.yaml", ".git"},
+  init_options = {
+    closingLabels = true,
+    outline = true,
+    flutterOutline = true,
+  },
+  settings = {
+    dart = {
+      completeFunctionCalls = true,
+      showTodos = true,
+    },
+  },
+})
+
+vim.lsp.enable({'lua_ls', 'pyright', 'ruff', 'rust_analyzer', 'clangd', 'dartls'})
