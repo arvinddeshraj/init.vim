@@ -8,6 +8,9 @@ return {
         "folke/noice.nvim",
         event = "VeryLazy",
         opts = {
+            presets = {
+                lsp_doc_border = true,
+            },
             lsp = {
                 -- blink.cmp owns signature help; letting Noice auto-open it as well
                 -- creates two popups for the same function call.

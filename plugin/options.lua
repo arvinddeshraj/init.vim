@@ -2,6 +2,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
+vim.opt.winborder = "rounded"
 vim.opt.hidden = true       -- buffers stay around
 vim.opt.equalalways = false -- windows stay the same
 
