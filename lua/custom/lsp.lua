@@ -78,4 +78,9 @@ vim.lsp.config("dartls", {
     },
 })
 
-vim.lsp.enable({ 'lua_ls', 'pyright', 'ruff', 'rust_analyzer', 'clangd', 'dartls' })
+vim.lsp.config("ty", {
+    cmd = { "uv", "run", "ty", "server" },
+    filetypes = { "python" }
+})
+
+vim.lsp.enable({ 'lua_ls', 'pyright', 'ruff', 'rust_analyzer', 'clangd', 'dartls', 'ty' })
