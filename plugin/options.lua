@@ -2,11 +2,11 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
-vim.opt.hidden = true -- buffers stay around
+vim.opt.hidden = true       -- buffers stay around
 vim.opt.equalalways = false -- windows stay the same
 
 -- Text completion
-vim.opt.completeopt = {"menu","menuone","noselect"}
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 -- Default splits
 vim.opt.splitright = true
@@ -15,10 +15,10 @@ vim.opt.splitbelow = true
 vim.opt.updatetime = 250
 vim.opt.scrolloff = 10
 vim.opt.showmode = false
-vim.opt.cmdheight = 1 -- height of the command bar
+vim.opt.cmdheight = 1   -- height of the command bar
 vim.opt.belloff = "all" -- no sounds
 vim.opt.clipboard = "unnamedplus"
-vim.opt.mouse = "a" -- blasphemy
+vim.opt.mouse = "a"     -- blasphemy
 vim.opt.fileencoding = "utf-8"
 vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes"
@@ -26,9 +26,9 @@ vim.opt.timeoutlen = 300
 vim.opt.ruler = true
 vim.opt.list = true
 vim.opt.listchars = {
-  eol = '⤶',
-  trail = '.',
-  tab = '➤ '
+    eol = '⤶',
+    trail = '.',
+    tab = '➤ '
 }
 vim.opt.formatoptions:remove "o"
 

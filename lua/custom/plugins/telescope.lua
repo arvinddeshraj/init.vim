@@ -42,7 +42,7 @@ return {
             vim.fn.system("jj root")
             if vim.v.shell_error == 0 then
                 builtin.find_files({
-                    find_command = {"jj", "file", "list"},
+                    find_command = { "jj", "file", "list" },
                 })
                 return
             end

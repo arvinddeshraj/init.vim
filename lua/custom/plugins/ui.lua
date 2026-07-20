@@ -1,26 +1,26 @@
 return {
-    { 
+    {
         "catppuccin/nvim",
         name = "catppuccin",
         priority = 1000,
     },
     {
-      "folke/noice.nvim",
-      event = "VeryLazy",
-      opts = {
-        lsp = {
-          -- blink.cmp owns signature help; letting Noice auto-open it as well
-          -- creates two popups for the same function call.
-          signature = { enabled = false },
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            lsp = {
+                -- blink.cmp owns signature help; letting Noice auto-open it as well
+                -- creates two popups for the same function call.
+                signature = { enabled = false },
+            },
         },
-      },
-      dependencies = {
-        -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-        "MunifTanjim/nui.nvim",
-        -- OPTIONAL:
-        --   `nvim-notify` is only needed, if you want to use the notification view.
-        --   If not available, we use `mini` as the fallback
-        -- "rcarriga/nvim-notify",
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            -- "rcarriga/nvim-notify",
         }
     },
     {
@@ -41,7 +41,7 @@ return {
         "folke/snacks.nvim",
         lazy = false,
         opts = {
-            indent = {enabled = true}
+            indent = { enabled = true }
         }
     }
 }
