@@ -7,7 +7,13 @@ return {
     {
       "folke/noice.nvim",
       event = "VeryLazy",
-      opts = {},
+      opts = {
+        lsp = {
+          -- blink.cmp owns signature help; letting Noice auto-open it as well
+          -- creates two popups for the same function call.
+          signature = { enabled = false },
+        },
+      },
       dependencies = {
         -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
         "MunifTanjim/nui.nvim",
